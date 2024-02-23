@@ -1,0 +1,3 @@
+The "ESP32Arduino.ino" is a taken example from the ESP32SPISlave library,
+that it works showing the buffer of the Master's message in the SPI protocol
+this helped me to prove the spi_test program worked

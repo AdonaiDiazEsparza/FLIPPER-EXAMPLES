@@ -1,5 +1,7 @@
 ## THIS IS A REPOSITORY WHERE I PUT MY CODES FOR THE FLIPPER ZERO
-Hello there's not too much about FLIPPER ZERO, here I will upload the codes I'll made it about Flipper Zero. Experiments, Scenes, Communication Protocol, and more.
+Hello there's not too much about FLIPPER ZERO, here I will upload the codes I'll make about Flipper Zero. Experiments, Scenes, Communication Protocol, and more.
+
+I'm learning too, so nothing from this is a good code.
 
 This is a contribuition with Electronic Cats SAPI de CV, where I'm doing my professional practices.
 
