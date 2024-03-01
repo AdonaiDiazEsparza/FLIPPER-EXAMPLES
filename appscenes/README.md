@@ -19,9 +19,9 @@ typedef enum {
 } Appscenes;
 #undef ADD_SCENE
 ```
-
 The name will be: AppSceneHelloWorld
 
+For every function will use to the scene are defined for the following code:
 ```
 #define ADD_SCENE(prefix, name, id) void prefix##_scene_##name##_on_enter(void*);
 

@@ -78,13 +78,15 @@ inline static void furi_hal_spi_bus_r_handle_event_callback(
 
 //---------------------------------------------------------------------------------------------------------
 //  Here starts my program
-//  we are definin the
+//  
 //---------------------------------------------------------------------------------------------------------
 
+// The callback for the SPI
 static void spi_bus_callback(FuriHalSpiBusHandle* handle, FuriHalSpiBusHandleEvent event) {
     furi_hal_spi_bus_r_handle_event_callback(handle, event, SpeedBus);
 }
 
+// This the function that initialize the SPI protocol
 FuriHalSpiBusHandle* spi_alloc() {
     FuriHalSpiBusHandle* spi = malloc(sizeof(FuriHalSpiBusHandle));
     spi->bus = BUS;
@@ -96,6 +98,7 @@ FuriHalSpiBusHandle* spi_alloc() {
     return spi;
 }
 
+// This function works to send data by the SPI protocol
 static void send_data(FuriHalSpiBusHandle* spi) {
     uint8_t buffer[] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
     furi_hal_spi_acquire(spi);
@@ -108,6 +111,7 @@ static void send_data(FuriHalSpiBusHandle* spi) {
     furi_hal_spi_release(spi);
 }
 
+// This the main function
 int32_t app_main(void* p) {
     UNUSED(p);
 
